@@ -1,0 +1,83 @@
+<!-- <style>
+    .slider {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 500px 500px 500px 500px 500px 500px 500px 500px;
+        transition: 0.3s ease-in-out;
+        -webkit-transition: 0.3s ease-in-out;
+    }
+
+    .sliderItem {
+        height: 200px;
+    }
+
+    .sliderContainer {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .next,
+    .prev {
+        padding: 10px;
+        border-radius: 100%;
+        background: green;
+        width: 50px;
+        height: 50px;
+    }
+
+    .sliderItem:nth-child(even) {
+        background: red
+    }
+
+    .sliderItem:nth-child(odd) {
+        background: green
+    }
+</style>
+
+<div class="sliderContainer">
+    <div class="slider">
+        <div class="sliderItem">1</div>
+        <div class="sliderItem">2</div>
+        <div class="sliderItem">3</div>
+        <div class="sliderItem">4</div>
+        <div class="sliderItem">5</div>
+        <div class="sliderItem">6</div>
+        <div class="sliderItem">7</div>
+        <div class="sliderItem">8</div>
+    </div>
+    <div class="sliderControler">
+        <div class="next">next</div>
+        <div class="prev">prev</div>
+    </div>
+</div>
+
+<script>
+    const prev = document.getElementsByClassName("prev");
+    const next = document.getElementsByClassName("next");
+    const slider = document.getElementsByClassName("slider");
+    const sliderItem = document.getElementsByClassName("sliderItem");
+
+    var index = 0;
+    var step = 520;
+    var sliderItemCount = sliderItem.length;
+    var screenWidth = screen.width;
+    var screenStepSize = screenWidth / step;
+    var maxStep = Math.ceil(sliderItemCount - screenStepSize);
+
+    next[0].addEventListener("click", function () {
+        if (index < maxStep) {
+            index = index + 1;
+            var run = index * step;
+            slider[0].style.transform = "translateX(-" + run + "px)";
+        }
+
+    })
+    prev[0].addEventListener("click", function () {
+        if (index > 0) {
+            index = index - 1;
+            var run = index * step;
+            slider[0].style.transform = "translateX(-" + run + "px)";
+        }
+    })
+
+</script> -->
